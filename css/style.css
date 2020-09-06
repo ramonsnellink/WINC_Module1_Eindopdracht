@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Now, let's apply it on an element */
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.homepage {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "intro"
+    "ditl"
+    "gezin"
+    "aboutus"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+.intro {
+  grid-area: intro;
+}
+.ditl {
+  grid-area: ditl;
+}
+.gezin {
+  grid-area: gezin;
+}
+
+.aboutus {
+  grid-area: aboutus;
+}
+footer {
+  grid-area: footer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #141414;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #141414;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  background-color: #f6d15e;
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
+.nav__logo {
+  width: 230px;
+}
+
+.intro {
+  z-index: 1;
+}
+.intro__title {
+  text-align: center;
+  font-weight: 300;
+  line-height: 2.5rem;
+  padding: 40px 20px;
+}
+
+.intro__img {
+  width: 100%;
+}
+
+.intro__content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.split {
+  text-align: center;
+  padding: 30px 0px;
+  clip-path: url(#wave);
+}
+
+.split--yellow {
+  background-color: #f6d15e;
+}
+
+.split__title {
+  padding: 10px;
+}
+
+.split__subtitle {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0px 10px;
+  margin-bottom: 25px;
+}
+
+.split__img {
+  width: 100%;
+}
+
+.split__contentcontainer {
+  padding: 40px;
+}
+
+.split__content {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.split__button {
+  margin: 0 auto;
+}
+.split__button--white {
+  background-color: white;
+  color: black;
+}
+
+.aboutus {
+  background-color: #f3856d;
+  color: white;
+}
+.aboutus__title {
+  text-align: center;
+  padding: 20px 20px;
+  color: white;
+}
+.aboutus__content {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.aboutus__img {
+  width: 100%;
+}
+
+footer {
+  padding: 50px;
+}
