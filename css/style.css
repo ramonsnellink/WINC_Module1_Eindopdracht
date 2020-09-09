@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
 /* Now, let's apply it on an element */
 body {
   font-family: "Open Sans";
-  font-size: 16px;
   line-height: 2rem;
 }
 
@@ -55,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #141414;
 }
@@ -69,6 +72,7 @@ h3 {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 700;
+  letter-spacing: 1px;
   text-decoration: none;
   color: black;
   background-color: #f6d15e;
@@ -103,37 +107,52 @@ h3 {
   padding: 40px 20px;
 }
 
-.wave {
+/* .wave {
   height: 0px;
   width: 0px;
-}
+} */
 .split {
   text-align: center;
-  padding: 30px 0px;
-  clip-path: url(#wave);
+  /* clip-path: url(#wave); */
 }
 
 .split--yellow {
   background-color: #f6d15e;
 }
 
+.split__titlecontainer {
+  padding: 50px 20px;
+}
+
 .split__title {
-  padding: 10px;
+  padding-bottom: 10px;
+  line-height: 2.5rem;
 }
 
 .split__subtitle {
   font-weight: 300;
   font-size: 1rem;
-  padding: 0px 10px;
-  margin-bottom: 25px;
 }
 
-.split__img {
-  width: 100%;
+.ditl .split__img {
+  background-image: url("../images/Day-in-the-life-Fotografie-Vleuten-010-1.jpg");
+  background-repeat: none;
+  background-size: cover;
+  padding-bottom: 100%;
 }
+
+.gezin .split__img {
+  background-image: url("../images/familiefotografie-014-1245x830-3.jpg");
+  background-repeat: none;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+/* .split__img {
+  width: 100%;
+} */
 
 .split__contentcontainer {
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
 }
 
 .split__content {
@@ -151,22 +170,149 @@ h3 {
 
 .aboutus {
   background-color: #f3856d;
-  color: white;
+  padding: 40px;
 }
 .aboutus__title {
   text-align: center;
-  padding: 20px 20px;
-  color: white;
+  padding-bottom: 20px;
 }
 .aboutus__content {
-  padding: 20px 20px;
   text-align: center;
 }
 
+.aboutus__contentcontainer {
+  padding: 20px 40px 40px 40px;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  max-width: 800px;
+}
+
 .aboutus__img {
+  margin: 0 auto;
   width: 100%;
+  display: block;
+  max-width: 800px;
+}
+
+.contactform {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactform label {
+  display: block;
+  padding: 10px 0px;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #818a91;
+  border-radius: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contactform__button {
+  border: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  cursor: pointer;
 }
 
 footer {
-  padding: 50px;
+  padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .split__title {
+    font-size: 2.3rem;
+  }
+
+  .intro__title {
+    font-size: 2.3rem;
+  }
+
+  .intro__content {
+    padding: 50px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .aboutus__contentcontainer {
+    padding: 60px;
+    max-width: 800px;
+  }
+
+  .ditl .split__img {
+    padding-bottom: 66%;
+  }
+
+  .gezin .split__img {
+    padding-bottom: 66%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  .intro__content {
+    padding: 75px;
+    max-width: 800px;
+  }
+  .ditl {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img title"
+      "img content";
+
+    align-content: center;
+  }
+
+  .gezin {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title img"
+      "content img";
+  }
+
+  .split__titlecontainer {
+    grid-area: title;
+    padding: 100px 50px 20px 50px;
+  }
+
+  .split__contentcontainer {
+    grid-area: content;
+  }
+
+  .split__img {
+    grid-area: img;
+    height: auto;
+    padding-bottom: 0%;
+  }
+
+  .split {
+    text-align: left;
+  }
+  .split__contentcontainer {
+    padding: 20px 50px 100px 50px;
+  }
+
+  .ditl .split__img {
+    padding-bottom: 0;
+  }
+
+  .gezin .split__img {
+    padding-bottom: 0%;
+  }
 }

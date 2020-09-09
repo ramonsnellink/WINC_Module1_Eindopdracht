@@ -25,62 +25,95 @@
         <h1 class="intro__title">Familiefotografie op een ongedwongen manier</h1>
         <img class="intro__img" src="images/frontpage_image.jpg" alt="familiefoto op het strand" />
         <p class="intro__content">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam
+          Familiefotografie wordt door de jaren heen steeds meer waardevol. Denk maar aan die foto’s
+          die je van jezelf hebt als kind zijnde, misschien wel met je ouders of broers en zusjes.
+          Kun je nog herinneren hoe het leven was toen je zelf een kind was?
         </p>
       </section>
       <section class="ditl split split--yellow">
-        <svg class="wave">
+        <!-- <svg class="wave">
           <clippath id="wave" clippathunits="objectBoundingBox">
             <path
               class="st0"
               d="M-0.021,0.041c0,0 0.063,-0.024 0.481,-0.009c0.413,0.015 0.414,-0.026 0.553,0.004c0.176,0.037 0.051,0.969 0.051,0.969l-1.096,0.011l0.011,-0.975Z"
             />
           </clippath>
-        </svg>
-        <h2 class="split__title">Een dag uit jullie leven</h2>
-        <h3 class="split__subtitle">Lorem ipsum - dolor sit - amet</h3>
-        <img
-          class="split__img"
-          src="images/Day-in-the-life-Fotografie-Vleuten-010-1.jpg"
-          alt="day in the life familiefotografie"
-        />
+        </svg> -->
+        <div class="split__titlecontainer">
+          <h2 class="split__title">Een dag uit jullie leven</h2>
+          <h3 class="split__subtitle">3 a 4 uur - Bij jullie thuis</h3>
+        </div>
+        <div class="split__img"></div>
         <div class="split__contentcontainer">
           <p class="split__content">
-            Kinderen groeien op waar je bij staat. Misschien een cliché, maar daarom niet minder
-            waar. En voor je het weet kunnen ze kruipen, lopen, gaan ze naar school en verandert je
-            baby in een zelfstandig kind.
+            Omdat wij geloven in het vastleggen van mooie momenten, bieden we Day in the Life
+            sessies aan. Hierbij fotografeer ik een heel gewone middag in jullie leven. Zodat je die
+            kleine details, die minimomentjes en die emotie nooit hoeft te vergeten. Familiefoto’s
+            op een totaal nieuwe manier dus. Waarbij je de echte dynamiek van jullie gezin
+            terugziet.
           </p>
           <a class="button split__button split__button--white" href="#">Day in the Life</a>
         </div>
       </section>
 
       <section class="gezin split">
-        <h2 class="split__title">Ontspannen fotosessie</h2>
-        <h3 class="split__subtitle">Lorem ipsum - dolor sit - amet</h3>
-        <img
-          class="split__img"
-          src="images/familiefotografie-014-1245x830-3.jpg"
-          alt="spontane familiefoto"
-        />
+        <div class="split__titlecontainer">
+          <h2 class="split__title">Ontspannen fotosessie</h2>
+          <h3 class="split__subtitle">1 a 1,5 uur - op locatie</h3>
+        </div>
+        <div class="split__img"></div>
+
         <div class="split__contentcontainer">
           <p class="split__content">
-            Kinderen groeien op waar je bij staat. Misschien een cliché, maar daarom niet minder
-            waar. En voor je het weet kunnen ze kruipen, lopen, gaan ze naar school en verandert je
-            baby in een zelfstandig kind.
+            Soms wil je gewoon een paar mooie foto’s voor aan de muur. Of je wilt een mooi album
+            hebben met daarin foto’s van jullie als gezin. Maar dan niet foto’s die in een studio
+            gemaakt zijn, maar juist op een locatie die iets met jullie doet.
           </p>
-          <a class="button split__button split__button" href="#">Day in the Life</a>
+          <a class="button split__button split__button" href="#">Gezinsfotografie</a>
         </div>
       </section>
 
       <section class="aboutus">
         <img class="aboutus__img" src="images/over-ons-001.jpg" alt="over ons" />
-        <h2 class="aboutus__title">Dit zijn wij</h2>
-        <p class="aboutus__content">
-          Kinderen groeien op waar je bij staat. Misschien een cliché, maar daarom niet minder waar.
-        </p>
+
+        <div class="aboutus__contentcontainer">
+          <h2 class="aboutus__title">Dit zijn wij</h2>
+          <p class="aboutus__content">
+            Ik fotografeer met het doel om blijvende herinneringen te maken. Zodat jullie over een
+            paar jaar de foto’s bekijken en denken: “ja, zo was het echt”. Nu we zelf een dochter
+            hebben beseffen we dat de tijd zo snel gaat. Het ene moment heb je een baby in je armen
+            en een paar maanden later zet ze haar eerste stappen. En voor je het weet gaan ze naar
+            school. Om die reden pleiten we voor waardevolle familiefoto’s.
+          </p>
+        </div>
       </section>
     </main>
-    <footer>Hier komt een contactformulier</footer>
+    <footer>
+      <form class="contactform" name="contact" method="POST" data-netlify="true">
+        <div class="contactform__formfield">
+          <label for="name">Jullie namen:</label>
+          <input type="text" name="names" id="name" />
+        </div>
+        <div class="contactform__formfield">
+          <label for="email">E-mailadres:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="contactform__formfield">
+          <label for="phone">Telefoonnummer:</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="contactform__formfield">
+          <label for="more">Vertel ons meer:</label>
+          <textarea
+            name="more"
+            id="more"
+            cols="20"
+            rows="10"
+            placeholder="Vertel meer over jullie! Hoe ziet jullie gezin er uit? Welk type sessie zouden jullie willen boeken?"
+          ></textarea>
+        </div>
+        <button class="button contactform__button" type="submit">Verzend</button>
+      </form>
+    </footer>
   </body>
 </html>
