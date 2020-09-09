@@ -4,14 +4,114 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-/* Now, let's apply it on an element */
 body {
   font-family: "Open Sans";
   line-height: 2rem;
 }
+
+footer {
+  grid-area: footer;
+}
+
+/* --- NAV --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.nav__logo-container {
+  width: 230px;
+  height: auto;
+}
+.nav__logo {
+  width: 100%;
+}
+
+/* --- HEADINGS --- */
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #141414;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  color: #141414;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.page-intro {
+  padding: 40px;
+}
+.page-intro__title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.page-intro__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- GENERAL STYLING --- */
+
+.button {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+  background-color: #f6d15e;
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
+/* --- FOOTER --- */
+
+footer {
+  padding: 40px;
+}
+
+.contactform {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactform label {
+  display: block;
+  padding: 10px 0px;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #818a91;
+  border-radius: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contactform__button {
+  border: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+/* --- HOMEPAGE --- */
 
 .homepage {
   display: grid;
@@ -41,52 +141,6 @@ header {
 .aboutus {
   grid-area: aboutus;
 }
-footer {
-  grid-area: footer;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px;
-  border-bottom: 1px solid lightgrey;
-}
-
-h1 {
-  font-size: 1.5rem;
-  color: #141414;
-}
-
-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #141414;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.button {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: black;
-  background-color: #f6d15e;
-  padding: 13px 20px;
-  border-radius: 10px;
-}
-
-.nav__logo-container {
-  width: 230px;
-  height: auto;
-}
-.nav__logo {
-  width: 100%;
-}
 
 .intro {
   z-index: 1;
@@ -94,7 +148,6 @@ h3 {
 .intro__title {
   text-align: center;
   font-weight: 300;
-  line-height: 2.5rem;
   padding: 40px 20px;
 }
 
@@ -126,7 +179,6 @@ h3 {
 
 .split__title {
   padding-bottom: 10px;
-  line-height: 2.5rem;
 }
 
 .split__subtitle {
@@ -147,9 +199,6 @@ h3 {
   background-size: cover;
   padding-bottom: 100%;
 }
-/* .split__img {
-  width: 100%;
-} */
 
 .split__contentcontainer {
   padding: 40px 40px 60px 40px;
@@ -195,48 +244,67 @@ h3 {
   max-width: 800px;
 }
 
-.contactform {
+/* --- PORTFOLIO --- */
+
+.portfolio__slider img {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.contactform label {
-  display: block;
-  padding: 10px 0px;
-}
-
-.contactform input,
-.contactform textarea {
-  width: 100%;
-  padding: 5px 15px;
-  border: 1px solid #818a91;
-  border-radius: 0;
-  font-family: inherit;
-  box-sizing: border-box;
-}
-
-.contactform__button {
-  border: 0;
-  margin: 0 auto;
-  margin-top: 30px;
-  display: block;
-  cursor: pointer;
-}
-
-footer {
+.portfolio-info {
   padding: 40px;
+  text-align: center;
+}
+
+.portfolio-info__content {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.portfolio-info__quote {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+
+.portfolio-info__quote:before {
+  color: #ccc;
+  content: open-quote;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.portfolio-info__button {
+  margin: 0 auto;
+}
+.portfolio-info__list {
+  text-align: left;
+  list-style: inside;
+  padding: 20px;
+}
+
+.portfolio-info__list-title {
+  font-weight: 600;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.portfolio-info__price {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .split__title {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
     font-size: 2.3rem;
   }
 
-  .intro__title {
-    font-size: 2.3rem;
-  }
-
+  /* --- HOMEPAGE 768--- */
   .intro__content {
     padding: 50px;
     max-width: 75%;
@@ -262,6 +330,9 @@ footer {
     font-size: 1.1rem;
     line-height: 2.2rem;
   }
+
+  /* --- HOMEPAGE 1024--- */
+
   .intro__content {
     padding: 75px;
     max-width: 800px;
