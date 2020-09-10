@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Real Family Life - Blogpost</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__logo-container">
+          <a href="index.html"
+            ><img class="nav__logo" src="./images/rfl-logo-2.png" width="230px" alt="logo"
+          /></a>
+        </div>
+        <span class="nav__menu">|||</span>
+      </nav>
+    </header>
+    <main class="blogpost">
+      <h1 class="blogpost__title">Dit is een blogpost</h1>
+      <img
+        class="blogpost__featured-img"
+        src="./images/Gezinsfoto-Zaanse-Schans-Zaandam-WI-015.jpg"
+        alt=""
+      />
+      <article class="blogpost__content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ea? Fuga placeat quae cum,
+          debitis animi corrupti praesentium molestiae impedit ratione odio iure earum reiciendis
+          provident dicta adipisci tenetur magnam!
+        </p>
+        <img src="./images/Gezinsfotografie-Day-in-the-Life-Nicoline-Dennis-024.jpg" alt="" />
+        <img
+          src="./images/Gezinsfotografie-Day-in-the-Life-Thomas-Lisette-013-1245x830.jpg"
+          alt=""
+        />
+      </article>
+    </main>
+    <footer>
+      <div class="footer-cta">
+        <h3 class="footer-cta__title">Boek een fijne familiesessie</h3>
+        <p class="footer-cta__content">
+          Wil je meer informatie over mijn familiefotografie of wil je meteen een sessie boeken,
+          stuur dan meteen een e-mail.
+        </p>
+
+        <form class="contactform" name="contact" method="POST" data-netlify="true">
+          <div class="contactform__formfield">
+            <label for="name">Jullie namen:</label>
+            <input type="text" name="names" id="name" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="email">E-mailadres:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="phone">Telefoonnummer:</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="more">Vertel ons meer:</label>
+            <textarea
+              name="more"
+              id="more"
+              cols="20"
+              rows="10"
+              placeholder="Vertel meer over jullie! Hoe ziet jullie gezin er uit? Welk type sessie zouden jullie willen boeken?"
+            ></textarea>
+          </div>
+          <button class="button contactform__button" type="submit">Verzend</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
