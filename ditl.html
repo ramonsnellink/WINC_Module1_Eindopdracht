@@ -13,13 +13,22 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav__logo-container">
-          <a href="index.html"
-            ><img class="nav__logo" src="./images/rfl-logo-2.png" width="230px" alt="logo"
-          /></a>
-        </div>
-        <span class="nav__menu">|||</span>
+      <div class="logo-container">
+        <a href="index.html">
+          <img class="logo" src="./images/rfl-logo-2.png" width="230px" alt="logo"
+        /></a>
+      </div>
+
+      <!-- Nav menu made with this: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+      <!-- For Winc teachers: I didn't know how to make my own hamburger menu, so I googled one :) -->
+      <button class="ham"></button>
+      <nav class="navbar">
+        <ul>
+          <li><a class="menuLink" href="ditl.html">Day in the Life</a></li>
+          <li><a class="menuLink" href="gezinsfotografie.html">Gezinsfotografie</a></li>
+          <li><a class="menuLink" href="blog.html">Blog</a></li>
+          <li><a class="menuLink" href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main class="portfolio">
@@ -176,5 +185,6 @@
         </form>
       </div>
     </footer>
+    <script src="./scripts/hamburger.js"></script>
   </body>
 </html>
