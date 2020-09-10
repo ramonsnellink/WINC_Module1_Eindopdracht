@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    >
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -16,7 +15,9 @@
     <header>
       <nav>
         <div class="nav__logo-container">
-          <img class="nav__logo" src="./images/rfl-logo-2.png" width="230px" alt="logo" />
+          <a href="index.html">
+            <img class="nav__logo" src="./images/rfl-logo-2.png" width="230px" alt="logo"
+          /></a>
         </div>
         <span class="nav__menu">|||</span>
       </nav>
@@ -53,7 +54,7 @@
             op een totaal nieuwe manier dus. Waarbij je de echte dynamiek van jullie gezin
             terugziet.
           </p>
-          <a class="button split__button split__button--white" href="#">Day in the Life</a>
+          <a class="button split__button split__button--white" href="ditl.html">Day in the Life</a>
         </div>
       </section>
 
@@ -70,7 +71,9 @@
             hebben met daarin foto’s van jullie als gezin. Maar dan niet foto’s die in een studio
             gemaakt zijn, maar juist op een locatie die iets met jullie doet.
           </p>
-          <a class="button split__button split__button" href="#">Gezinsfotografie</a>
+          <a class="button split__button split__button" href="gezinsfotografie.html"
+            >Gezinsfotografie</a
+          >
         </div>
       </section>
 
@@ -90,31 +93,39 @@
       </section>
     </main>
     <footer>
-      <form class="contactform" name="contact" method="POST" data-netlify="true">
-        <div class="contactform__formfield">
-          <label for="name">Jullie namen:</label>
-          <input type="text" name="names" id="name" />
-        </div>
-        <div class="contactform__formfield">
-          <label for="email">E-mailadres:</label>
-          <input type="email" name="email" id="email" />
-        </div>
-        <div class="contactform__formfield">
-          <label for="phone">Telefoonnummer:</label>
-          <input type="tel" name="phone" id="phone" />
-        </div>
-        <div class="contactform__formfield">
-          <label for="more">Vertel ons meer:</label>
-          <textarea
-            name="more"
-            id="more"
-            cols="20"
-            rows="10"
-            placeholder="Vertel meer over jullie! Hoe ziet jullie gezin er uit? Welk type sessie zouden jullie willen boeken?"
-          ></textarea>
-        </div>
-        <button class="button contactform__button" type="submit">Verzend</button>
-      </form>
+      <div class="footer-cta">
+        <h3 class="footer-cta__title">Boek een fijne familiesessie</h3>
+        <p class="footer-cta__content">
+          Wil je meer informatie over mijn familiefotografie of wil je meteen een sessie boeken,
+          stuur dan meteen een e-mail.
+        </p>
+
+        <form class="contactform" name="contact" method="POST" data-netlify="true">
+          <div class="contactform__formfield">
+            <label for="name">Jullie namen:</label>
+            <input type="text" name="names" id="name" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="email">E-mailadres:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="phone">Telefoonnummer:</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="contactform__formfield">
+            <label for="more">Vertel ons meer:</label>
+            <textarea
+              name="more"
+              id="more"
+              cols="20"
+              rows="10"
+              placeholder="Vertel meer over jullie! Hoe ziet jullie gezin er uit? Welk type sessie zouden jullie willen boeken?"
+            ></textarea>
+          </div>
+          <button class="button contactform__button" type="submit">Verzend</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
